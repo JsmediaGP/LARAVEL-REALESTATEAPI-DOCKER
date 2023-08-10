@@ -19,7 +19,7 @@ class PropertyController extends Controller
         //$properties = Property::all();
         //$properties = Property::all();
         $status = "For Sale";
-       $properties = DB::table('property')->select('id','title','address', 'price', 'bedspace','baths','parking_space','measurement','image', 'availability')->get();
+       $properties = DB::table('property')->select('id','title','address', 'price', 'bedspace','baths','parking_space','measurement','image')->get();
         if($properties->count()>0){
             return response()->json([
                 

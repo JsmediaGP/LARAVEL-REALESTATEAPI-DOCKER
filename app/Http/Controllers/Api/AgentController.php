@@ -33,7 +33,7 @@ class AgentController extends Controller
 
     public function newAgent(Request $request){
         
-       
+        
         $credentials = Validator::make($request->all(), [
             'name'=>'required|string',
             'email'=>'required|email|unique:agent',

@@ -44,9 +44,9 @@ class BlogController extends Controller
         }
     }
 
-    function newarticle(Request $request){
+    public function newarticle(Request $request){
 
-        $details = Validator::make($request->all(),[
+        $details = Validator::make($request->all(), [
             
             'title'=>'required|string',
             'body'=>'required|string',
@@ -88,4 +88,6 @@ class BlogController extends Controller
 
 
     }
+
+    
 }

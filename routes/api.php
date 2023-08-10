@@ -45,8 +45,9 @@ Route::post('new-location', [LocationController::class, 'newLocation']);
 Route::get('locationpropertycount', [LocationController::class, 'locationpropertycount']);
 Route::get('locationproperties/{location_id}', [LocationController::class, 'locationProperties']);
 
-//blog route
+//blog route 
+//shows all article, search/view an article by their id, and post a new article 
 
 Route::get('blog', [BlogController::class, 'Article']);
 Route::get('blog/{id}', [BlogController::class, 'SingleArticle']);
-Route::post('new-article', [BlogController::class], 'newarticle');
+Route::post('newArticle', [BlogController::class, 'newarticle']);
