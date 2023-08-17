@@ -18,11 +18,11 @@ return new class extends Migration
             $table->string('image');
             $table->string('post');
             $table->string('phone');
-            $table->string('details');
+            $table->string('details', 5000);
             $table->timestamps();
         });
     }
-
+ 
     /**
      * Reverse the migrations.
      */
