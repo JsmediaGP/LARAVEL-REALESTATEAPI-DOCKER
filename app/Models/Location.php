@@ -11,7 +11,7 @@ class Location extends Model
     protected $table ='location';
 
     protected $fillable = [
-        'location'
+        'location', 'picture'
     ];
 
     public function property() {

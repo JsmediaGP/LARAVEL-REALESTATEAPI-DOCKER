@@ -123,6 +123,8 @@ class PropertyController extends Controller
     //search property using the following field id,  title, price, bedspace, baths, parking_space, meassurement
     public function findProperty($id){
 
+        
+
         $property = Property::findOrFail($id);
 
         if($property){

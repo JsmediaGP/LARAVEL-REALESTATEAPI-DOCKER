@@ -76,7 +76,18 @@ class AgentController extends Controller
         
 
         $agent = Agent::findOrFail($id);
-        return new agentResource($agent);
+        if ($agent){
+            return new agentResource($agent);
+
+        }
+        else{
+            
+            return response()->json([
+                "message"=> "Agent not found"
+            ],200);
+       
+        }
+       
     }
 
     public function getids(){
@@ -108,7 +119,7 @@ class AgentController extends Controller
     
 
     public function agentProperties($agent_id){
-
+        
         $agentsProperties = Property::where('agent_id', $agent_id)->get();
        // return response()->json($aaa);
         if($agentsProperties->count()>0){

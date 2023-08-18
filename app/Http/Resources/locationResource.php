@@ -16,7 +16,8 @@ class locationResource extends JsonResource
     {
         return [
             'id'=>$this->id,
-            'location'=>$this->location
+            'location'=>$this->location,
+            'picture'=>$this->picture
         ];
     }
 }
