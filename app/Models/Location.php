@@ -19,3 +19,4 @@ class Location extends Model
     }
     use HasFactory;
 }
+ 

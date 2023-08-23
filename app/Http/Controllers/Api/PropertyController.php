@@ -40,7 +40,7 @@ class PropertyController extends Controller
         $status = "For Sale";
         $properties = DB::table('property')->select('id','title','address', 'price', 'bedspace'
             ,'baths','parking_space','measurement','image', 'availability')
-            ->where('availability',$status)->get();
+            ->where('availability',$status)->inRandomOrder()->limit(6)->get();
             
         if($properties->count()>0){
             return response()->json([
