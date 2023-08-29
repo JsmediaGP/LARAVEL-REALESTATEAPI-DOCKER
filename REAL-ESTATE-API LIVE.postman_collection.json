@@ -1,0 +1,2440 @@
+{
+	"info": {
+		"_postman_id": "5fdf104d-be1d-481c-b3c2-c7fa1291c3fb",
+		"name": "REAL-ESTATE-API LIVE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28132890",
+		"_collection_link": "https://www.postman.com/orange-meteor-366048/workspace/mine/collection/28132890-5fdf104d-be1d-481c-b3c2-c7fa1291c3fb?action=share&source=collection_link&creator=28132890"
+	},
+	"item": [
+		{
+			"name": "ALL AGENTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/agents",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"agents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/agents",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"agents"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 11:56:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "e895ac89b7e9cbd2fda8a8a7b4f71006"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": [\n        {\n            \"id\": 1,\n            \"name\": \"Kelian Anderson\",\n            \"email\": \"rawjassasm_1212.jd@gmail.com\",\n            \"phone\": \"+17213265789\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Elena Gilbert\",\n            \"email\": \"elena.Gd@gmail.com\",\n            \"phone\": \"+2123265789\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Rose Roselinna\",\n            \"email\": \"Roselina.Ro@gmail.com\",\n            \"phone\": \"+2523265789\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "ADD AGENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Joan J Noel\",\r\n    \"email\": \"damion.dubuq@yahoo.com\",\r\n    \"phone\": \"91389499013\",\r\n    \"post\": \"Land seller\",\r\n    \"image\": \"https://www.fakepersongenerator.com/Face/female/female1021460529724.jpg\",\r\n    \"details\":\"Evil zombie trailblazer. Troublemaker. Web enthusiast. Total music fan. Internet junkie. Reader. Tv guru.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/new_agent",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"new_agent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Joan J Noel\",\r\n    \"email\": \"damion.dubuq@yahoo.com\",\r\n    \"phone\": \"91389499013\",\r\n    \"post\": \"Land seller\",\r\n    \"image\": \"https://www.fakepersongenerator.com/Face/female/female1021460529724.jpg\",\r\n    \"details\":\"Evil zombie trailblazer. Troublemaker. Web enthusiast. Total music fan. Internet junkie. Reader. Tv guru.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/new_agent",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"new_agent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 12:03:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "80a46b4ce5a718087c38346f343f03af"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Agent Successfully Created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "FIND AGENT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/find_agent/2",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"find_agent",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/find_agent/2",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"find_agent",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 12:17:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "370bd4191db361b31f3010f7a03ac12f"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Elena Gilbert\",\n        \"email\": \"elena.Gd@gmail.com\",\n        \"image\": \"https://images.unsplash.com/photo-1609132718484-cc90df3417f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFrZSUyMHdvbWFufGVufDB8fDB8fHww&w=1000&q=80\",\n        \"phone\": \"+2123265789\",\n        \"post\": \"land Seller\",\n        \"details\": \"s. Aliquam feugiat eleifend efficitur. Cras vel commodo eros. Aenean consectetur dui et nulla egestas, vel lobortis arcu fringilla. Aenean eu augue in arcu lobortis consequat rutrum nec nisi. Suspendisse efficitur orci eu dignissim volutpat. Pellentesque ullamcorper tortor sit amet metus lobortis, a vulputate lorem tincidunt. Nam volutpat congue augue, ut tincidunt magna dignissim volutpat. Pellentesque hendrerit porttitor congue. Suspendisse porttitor ex sit amet posuere pharetra. Sed gravida felis sed est interdum, nec gravida tortor maximus.\"\n    }\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/find_agent/23",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"find_agent",
+								"23"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 12:27:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "ca61e4a8a38cb1e51cd21d73996a9d56"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "AGENTS ID AND NAME",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/agents_id",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"agents_id"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/agents_id",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"agents_id"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 12:18:31 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "55b8dc4b11af74f76ae98b6327909c51"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Lists of Agents by their ID\",\n    \"message\": {\n        \"1\": \"Kelian Anderson\",\n        \"2\": \"Elena Gilbert\",\n        \"3\": \"Rose Roselinna\",\n        \"4\": \"Joan J Noel\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "AGENT PROPERTIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/agentproperties/10",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"agentproperties",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/agentproperties/3",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"agentproperties",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 12:20:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "fc7e9974aa5f289e13f09113d2e5fe57"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"agent_id\": 3,\n        \"location_id\": 4,\n        \"title\": \"Best Apartment for Sale\",\n        \"address\": \"10 Changi North Street 1 04-01\",\n        \"price\": \"3500\",\n        \"description\": \"Quisque sodales quam eu vestibulum tempor. Pellentesque rhoncus velit non semper aliquet. Ut vestibulum, velit in rhoncus auctor, erat erat tincidunt turpis, sit amet rhoncus mi ex id tortor. Etiam vehicula, mi sed consectetur varius, erat turpis viverra tortor, a pulvinar nisl dolor id mi. Nullam tincidunt porta tristique. In eu nibh dolor. Cras auctor lectus eget dignissim cursus. Nulla dolor justo, interdum sit amet eleifend cursus, porttitor ultricies eros.\\n\\n                In in est felis. Ut pulvinar consectetur porttitor. Sed non dignissim tortor. In lacus ante, aliquet et porta in, lacinia consectetur odio. Etiam a felis tortor. Nam sollicitudin sodales aliquam. Aliquam id dui id nisl consequat feugiat nec a mi. Phasellus feugiat posuere vulputate.\\n                \\n                Nunc ut mauris purus. Aliquam nibh lacus, consectetur ac aliquet sed, ultricies non velit. Praesent id metus vulputate, consequat orci congue, semper quam. Maecenas id hendrerit ligula. Aliquam nisi ante, tempor sed tristique ut, finibus vel lorem. Donec nec sodales lectus, in consequat nulla. Quisque vitae imperdiet neque, nec vestibulum odio. Praesent porta purus quis augue pharetra, vel posuere mauris iaculis. Nulla et finibus turpis. Etiam ac mauris non metus laoreet volutpat ut id arcu. Vivamus at ultricies dui, vitae efficitur neque. Nulla id sollicitudin lorem.\",\n        \"bedspace\": \"5\",\n        \"baths\": \"3\",\n        \"parking_space\": \"2\",\n        \"measurement\": \"120sqft\",\n        \"image\": \"https://unsplash.com/photos/NiHjyE1m9Kc\",\n        \"availability\": \"For Sale\",\n        \"created_at\": \"2023-08-17T16:05:31.000000Z\",\n        \"updated_at\": \"2023-08-17T16:05:31.000000Z\"\n    }\n]"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/agentproperties/10",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"agentproperties",
+								"10"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 12:21:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "96f8a9569680ebf3348adb5bbd0d0de1"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "PROPERTIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/featuredproperties",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"featuredproperties"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/properties",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"properties"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 12:30:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "a8c5060b91aa8e796fdd46149fa6823c"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": [\n        {\n            \"id\": 1,\n            \"title\": \"Comfortable Apartment\",\n            \"address\": \"701 MARTINA DR NE ATLANTA GA 30305-2737 USA\",\n            \"price\": \"3500\",\n            \"bedspace\": \"5\",\n            \"baths\": \"3\",\n            \"parking_space\": \"2\",\n            \"measurement\": \"120sqft\",\n            \"image\": \"https://unsplash.com/photos/2d4lAQAlbDA\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Comfortable Apartment\",\n            \"address\": \"900 DIMMOCK ST SW ATLANTA GA 30310-3314 USA\",\n            \"price\": \"3500\",\n            \"bedspace\": \"2\",\n            \"baths\": \"1\",\n            \"parking_space\": \"5\",\n            \"measurement\": \"120sqft\",\n            \"image\": \"https://unsplash.com/photos/MAnVoJlQUvg\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Comfortable Apartment\",\n            \"address\": \"100 Kim Seng Road 01-24 Kim Seng Plaza\",\n            \"price\": \"3500\",\n            \"bedspace\": \"5\",\n            \"baths\": \"3\",\n            \"parking_space\": \"2\",\n            \"measurement\": \"120sqft\",\n            \"image\": \"https://unsplash.com/photos/ZdJ6eIKN3G0\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Comfortable Apartment\",\n            \"address\": \"10 Changi North Street 1 04-01\",\n            \"price\": \"3500\",\n            \"bedspace\": \"5\",\n            \"baths\": \"3\",\n            \"parking_space\": \"2\",\n            \"measurement\": \"120sqft\",\n            \"image\": \"https://unsplash.com/photos/4ojhpgKpS68\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Best Apartment for Sale\",\n            \"address\": \"10 Changi North Street 1 04-01\",\n            \"price\": \"3500\",\n            \"bedspace\": \"5\",\n            \"baths\": \"3\",\n            \"parking_space\": \"2\",\n            \"measurement\": \"120sqft\",\n            \"image\": \"https://unsplash.com/photos/NiHjyE1m9Kc\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "NEW PROPERTY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Luxury family Loft",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "1 North Bridge Road #02-35 HIGH STREET CENTRE",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "900000",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Etiam vehicula, mi sed consectetur varius, erat turpis viverra tortor, a pulvinar nisl dolor id",
+							"type": "text"
+						},
+						{
+							"key": "bedspace",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "baths",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "parking_space",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "measurement",
+							"value": "1300sqft",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=828&q=80",
+							"type": "text"
+						},
+						{
+							"key": "agent_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "location_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/new_property",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"new_property"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/new_property",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"new_property"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 12:31:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "d596c286c749849710ace9c31ca47088"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": {\n        \"title\": [\n            \"The title field is required.\"\n        ],\n        \"address\": [\n            \"The address field is required.\"\n        ],\n        \"price\": [\n            \"The price field is required.\"\n        ],\n        \"description\": [\n            \"The description field is required.\"\n        ],\n        \"bedspace\": [\n            \"The bedspace field is required.\"\n        ],\n        \"baths\": [\n            \"The baths field is required.\"\n        ],\n        \"parking_space\": [\n            \"The parking space field is required.\"\n        ],\n        \"measurement\": [\n            \"The measurement field is required.\"\n        ],\n        \"image\": [\n            \"The image field is required.\"\n        ],\n        \"agent_id\": [\n            \"The agent id field is required.\"\n        ],\n        \"location_id\": [\n            \"The location id field is required.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Luxury family Loft",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "1 North Bridge Road #02-35 HIGH STREET CENTRE",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "900000",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Etiam vehicula, mi sed consectetur varius, erat turpis viverra tortor, a pulvinar nisl dolor id",
+									"type": "text"
+								},
+								{
+									"key": "bedspace",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "baths",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "parking_space",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "measurement",
+									"value": "1300sqft",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=828&q=80",
+									"type": "text"
+								},
+								{
+									"key": "agent_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "location_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/new_property",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"new_property"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 12:42:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "3e682e21dacd916e8355393f9ccf0a21"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": {\n        \"title\": \"Luxury family Loft\",\n        \"address\": \"1 North Bridge Road #02-35 HIGH STREET CENTRE\",\n        \"price\": \"900000\",\n        \"description\": \"Etiam vehicula, mi sed consectetur varius, erat turpis viverra tortor, a pulvinar nisl dolor id\",\n        \"bedspace\": \"7\",\n        \"baths\": \"3\",\n        \"parking_space\": \"4\",\n        \"measurement\": \"1300sqft\",\n        \"image\": \"https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=828&q=80\",\n        \"agent_id\": \"1\",\n        \"location_id\": \"3\",\n        \"updated_at\": \"2023-08-18T12:42:35.000000Z\",\n        \"created_at\": \"2023-08-18T12:42:35.000000Z\",\n        \"id\": 7\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "FIND PROPERTY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/find_property/10",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"find_property",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/find_property/10",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"find_property",
+								"10"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:04:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "af0df104f098c1dc08c94135f291c1fd"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/find_property/1",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"find_property",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:05:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "55"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "bdf25411ba4394380687c332b6f2f771"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"Comfortable Apartment\",\n        \"address\": \"701 MARTINA DR NE ATLANTA GA 30305-2737 USA\",\n        \"price\": \"3500\",\n        \"description\": \"Quisque sodales quam eu vestibulum tempor. Pellentesque rhoncus velit non semper aliquet. Ut vestibulum, velit in rhoncus auctor, erat erat tincidunt turpis, sit amet rhoncus mi ex id tortor. Etiam vehicula, mi sed consectetur varius, erat turpis viverra tortor, a pulvinar nisl dolor id mi. Nullam tincidunt porta tristique. In eu nibh dolor. Cras auctor lectus eget dignissim cursus. Nulla dolor justo, interdum sit amet eleifend cursus, porttitor ultricies eros.\\n\\n                In in est felis. Ut pulvinar consectetur porttitor. Sed non dignissim tortor. In lacus ante, aliquet et porta in, lacinia consectetur odio. Etiam a felis tortor. Nam sollicitudin sodales aliquam. Aliquam id dui id nisl consequat feugiat nec a mi. Phasellus feugiat posuere vulputate.\\n                \\n                Nunc ut mauris purus. Aliquam nibh lacus, consectetur ac aliquet sed, ultricies non velit. Praesent id metus vulputate, consequat orci congue, semper quam. Maecenas id hendrerit ligula. Aliquam nisi ante, tempor sed tristique ut, finibus vel lorem. Donec nec sodales lectus, in consequat nulla. Quisque vitae imperdiet neque, nec vestibulum odio. Praesent porta purus quis augue pharetra, vel posuere mauris iaculis. Nulla et finibus turpis. Etiam ac mauris non metus laoreet volutpat ut id arcu. Vivamus at ultricies dui, vitae efficitur neque. Nulla id sollicitudin lorem.\",\n        \"bedspace\": \"5\",\n        \"baths\": \"3\",\n        \"parking_space\": \"2\",\n        \"measurement\": \"120sqft\",\n        \"image\": \"https://unsplash.com/photos/2d4lAQAlbDA\",\n        \"availability\": \"For Sale\",\n        \"agent_id\": {\n            \"id\": 1,\n            \"name\": \"Kelian Anderson\",\n            \"email\": \"rawjassasm_1212.jd@gmail.com\",\n            \"image\": \"https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg\",\n            \"phone\": \"+17213265789\",\n            \"post\": \"land Seller\",\n            \"details\": \"s. Aliquam feugiat eleifend efficitur. Cras vel commodo eros. Aenean consectetur dui et nulla egestas, vel lobortis arcu fringilla. Aenean eu augue in arcu lobortis consequat rutrum nec nisi. Suspendisse efficitur orci eu dignissim volutpat. Pellentesque ullamcorper tortor sit amet metus lobortis, a vulputate lorem tincidunt. Nam volutpat congue augue, ut tincidunt magna dignissim volutpat. Pellentesque hendrerit porttitor congue. Suspendisse porttitor ex sit amet posuere pharetra. Sed gravida felis sed est interdum, nec gravida tortor maximus.\"\n        },\n        \"location_id\": {\n            \"id\": 2,\n            \"location\": \"Atlanta\",\n            \"picture\": \"https://a.cdn-hotels.com/gdcs/production31/d1958/3e9e520e-1c67-4bd6-a3a9-9eb4ab4a5b2f.jpg\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "LOCATIONS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/locations",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"locations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/locations",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"locations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:06:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "8632bd11f9a21459b05b5b7a9491e834"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": [\n        {\n            \"id\": 1,\n            \"location\": \"New York\",\n            \"picture\": \"https://i.pinimg.com/1200x/7d/d3/06/7dd3064ef0e69e98158540c6c19ee38d.jpg\",\n            \"created_at\": \"2023-08-17T16:05:16.000000Z\",\n            \"updated_at\": \"2023-08-17T16:05:16.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"location\": \"Atlanta\",\n            \"picture\": \"https://a.cdn-hotels.com/gdcs/production31/d1958/3e9e520e-1c67-4bd6-a3a9-9eb4ab4a5b2f.jpg\",\n            \"created_at\": \"2023-08-17T16:05:16.000000Z\",\n            \"updated_at\": \"2023-08-17T16:05:16.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"location\": \"Singapore\",\n            \"picture\": \"https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/1570204764595-DR2JEEZHR46QLSK2RQZX/chuttersnap-Y8AQatKZRGc-unsplash.jpg\",\n            \"created_at\": \"2023-08-17T16:05:16.000000Z\",\n            \"updated_at\": \"2023-08-17T16:05:16.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"location\": \"Paris\",\n            \"picture\": \"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/9262/images/8es5qCDSdekmvLc41K4k_Eiffel_Tower_Portrait-min.jpg\",\n            \"created_at\": \"2023-08-17T16:05:16.000000Z\",\n            \"updated_at\": \"2023-08-17T16:05:16.000000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "ALL LOCATIONS ID AND NAME",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/locationids",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"locationids"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/locationids",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"locationids"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:07:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "3ba8b1464ecf063918aaf7f01eae174e"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"lists of Locations\",\n    \"message\": {\n        \"1\": \"New York\",\n        \"2\": \"Atlanta\",\n        \"3\": \"Singapore\",\n        \"4\": \"Paris\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "LOCATION COUNT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/locationpropertycount",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"locationpropertycount"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/locationpropertycount",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"locationpropertycount"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:12:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "dcc6d3b46244c2622589a7304ec8fb3a"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"location\": \"New York\",\n        \"picture\": \"https://i.pinimg.com/1200x/7d/d3/06/7dd3064ef0e69e98158540c6c19ee38d.jpg\",\n        \"created_at\": \"2023-08-17T16:05:16.000000Z\",\n        \"updated_at\": \"2023-08-17T16:05:16.000000Z\",\n        \"property_count\": 0\n    },\n    {\n        \"id\": 2,\n        \"location\": \"Atlanta\",\n        \"picture\": \"https://a.cdn-hotels.com/gdcs/production31/d1958/3e9e520e-1c67-4bd6-a3a9-9eb4ab4a5b2f.jpg\",\n        \"created_at\": \"2023-08-17T16:05:16.000000Z\",\n        \"updated_at\": \"2023-08-17T16:05:16.000000Z\",\n        \"property_count\": 2\n    },\n    {\n        \"id\": 3,\n        \"location\": \"Singapore\",\n        \"picture\": \"https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/1570204764595-DR2JEEZHR46QLSK2RQZX/chuttersnap-Y8AQatKZRGc-unsplash.jpg\",\n        \"created_at\": \"2023-08-17T16:05:16.000000Z\",\n        \"updated_at\": \"2023-08-17T16:05:16.000000Z\",\n        \"property_count\": 4\n    },\n    {\n        \"id\": 4,\n        \"location\": \"Paris\",\n        \"picture\": \"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/9262/images/8es5qCDSdekmvLc41K4k_Eiffel_Tower_Portrait-min.jpg\",\n        \"created_at\": \"2023-08-17T16:05:16.000000Z\",\n        \"updated_at\": \"2023-08-17T16:05:16.000000Z\",\n        \"property_count\": 1\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "LOCATION PROPERTY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/locationproperties/3",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"locationproperties",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/locationproperties/1",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"locationproperties",
+								"1"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:13:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "dbe148a244f93f3a3a530551a4620571"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/locationproperties/3",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"locationproperties",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:14:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "a971818d2730cfd80b9ddd43919d4105"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"agent_id\": 2,\n        \"location_id\": 3,\n        \"title\": \"Comfortable Apartment\",\n        \"address\": \"100 Kim Seng Road 01-24 Kim Seng Plaza\",\n        \"price\": \"3500\",\n        \"description\": \"Quisque sodales quam eu vestibulum tempor. Pellentesque rhoncus velit non semper aliquet. Ut vestibulum, velit in rhoncus auctor, erat erat tincidunt turpis, sit amet rhoncus mi ex id tortor. Etiam vehicula, mi sed consectetur varius, erat turpis viverra tortor, a pulvinar nisl dolor id mi. Nullam tincidunt porta tristique. In eu nibh dolor. Cras auctor lectus eget dignissim cursus. Nulla dolor justo, interdum sit amet eleifend cursus, porttitor ultricies eros.\\n\\n                In in est felis. Ut pulvinar consectetur porttitor. Sed non dignissim tortor. In lacus ante, aliquet et porta in, lacinia consectetur odio. Etiam a felis tortor. Nam sollicitudin sodales aliquam. Aliquam id dui id nisl consequat feugiat nec a mi. Phasellus feugiat posuere vulputate.\\n                \\n                Nunc ut mauris purus. Aliquam nibh lacus, consectetur ac aliquet sed, ultricies non velit. Praesent id metus vulputate, consequat orci congue, semper quam. Maecenas id hendrerit ligula. Aliquam nisi ante, tempor sed tristique ut, finibus vel lorem. Donec nec sodales lectus, in consequat nulla. Quisque vitae imperdiet neque, nec vestibulum odio. Praesent porta purus quis augue pharetra, vel posuere mauris iaculis. Nulla et finibus turpis. Etiam ac mauris non metus laoreet volutpat ut id arcu. Vivamus at ultricies dui, vitae efficitur neque. Nulla id sollicitudin lorem.\",\n        \"bedspace\": \"5\",\n        \"baths\": \"3\",\n        \"parking_space\": \"2\",\n        \"measurement\": \"120sqft\",\n        \"image\": \"https://unsplash.com/photos/ZdJ6eIKN3G0\",\n        \"availability\": \"For Sale\",\n        \"created_at\": \"2023-08-17T16:05:31.000000Z\",\n        \"updated_at\": \"2023-08-17T16:05:31.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"agent_id\": 2,\n        \"location_id\": 3,\n        \"title\": \"Comfortable Apartment\",\n        \"address\": \"10 Changi North Street 1 04-01\",\n        \"price\": \"3500\",\n        \"description\": \"Quisque sodales quam eu vestibulum tempor. Pellentesque rhoncus velit non semper aliquet. Ut vestibulum, velit in rhoncus auctor, erat erat tincidunt turpis, sit amet rhoncus mi ex id tortor. Etiam vehicula, mi sed consectetur varius, erat turpis viverra tortor, a pulvinar nisl dolor id mi. Nullam tincidunt porta tristique. In eu nibh dolor. Cras auctor lectus eget dignissim cursus. Nulla dolor justo, interdum sit amet eleifend cursus, porttitor ultricies eros.\\n\\n                In in est felis. Ut pulvinar consectetur porttitor. Sed non dignissim tortor. In lacus ante, aliquet et porta in, lacinia consectetur odio. Etiam a felis tortor. Nam sollicitudin sodales aliquam. Aliquam id dui id nisl consequat feugiat nec a mi. Phasellus feugiat posuere vulputate.\\n                \\n                Nunc ut mauris purus. Aliquam nibh lacus, consectetur ac aliquet sed, ultricies non velit. Praesent id metus vulputate, consequat orci congue, semper quam. Maecenas id hendrerit ligula. Aliquam nisi ante, tempor sed tristique ut, finibus vel lorem. Donec nec sodales lectus, in consequat nulla. Quisque vitae imperdiet neque, nec vestibulum odio. Praesent porta purus quis augue pharetra, vel posuere mauris iaculis. Nulla et finibus turpis. Etiam ac mauris non metus laoreet volutpat ut id arcu. Vivamus at ultricies dui, vitae efficitur neque. Nulla id sollicitudin lorem.\",\n        \"bedspace\": \"5\",\n        \"baths\": \"3\",\n        \"parking_space\": \"2\",\n        \"measurement\": \"120sqft\",\n        \"image\": \"https://unsplash.com/photos/4ojhpgKpS68\",\n        \"availability\": \"For Sale\",\n        \"created_at\": \"2023-08-17T16:05:31.000000Z\",\n        \"updated_at\": \"2023-08-17T16:05:31.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"agent_id\": 1,\n        \"location_id\": 3,\n        \"title\": \"Luxury family Loft\",\n        \"address\": \"1 North Bridge Road #02-35 HIGH STREET CENTRE\",\n        \"price\": \"900000\",\n        \"description\": \"Etiam vehicula, mi sed consectetur varius, erat turpis viverra tortor, a pulvinar nisl dolor id\",\n        \"bedspace\": \"7\",\n        \"baths\": \"3\",\n        \"parking_space\": \"4\",\n        \"measurement\": \"1300sqft\",\n        \"image\": \"https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=828&q=80\",\n        \"availability\": \"For Sale\",\n        \"created_at\": \"2023-08-18T12:42:35.000000Z\",\n        \"updated_at\": \"2023-08-18T12:42:35.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"agent_id\": 2,\n        \"location_id\": 3,\n        \"title\": \"Luxury family Loft\",\n        \"address\": \"1 North Bridge Road #02-35 HIGH STREET CENTRE\",\n        \"price\": \"900000\",\n        \"description\": \"Etiam vehicula, mi sed consectetur varius, erat turpis viverra tortor, a pulvinar nisl dolor id\",\n        \"bedspace\": \"7\",\n        \"baths\": \"6\",\n        \"parking_space\": \"6\",\n        \"measurement\": \"1300sqft\",\n        \"image\": \"https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=828&q=80\",\n        \"availability\": \"For Sale\",\n        \"created_at\": \"2023-08-18T12:46:01.000000Z\",\n        \"updated_at\": \"2023-08-18T12:46:01.000000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "NEW LOCATION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "location",
+							"value": "Tokyo",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"value": "https://unsplash.com/photos/timelapse-photography-of-vehicles-and-buildings-4u2U8EO9OzY",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/new-location",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"new-location"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "NEW LOCATION",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "location",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/new-location",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"new-location"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:18:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "5cc10ebae330a1dee610aded08a27022"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": {\n        \"location\": [\n            \"The location field is required.\"\n        ],\n        \"picture\": [\n            \"The picture field is required.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "NEW LOCATION",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "location",
+									"value": "Tokyo",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"value": "https://unsplash.com/photos/timelapse-photography-of-vehicles-and-buildings-4u2U8EO9OzY",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/new-location",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"new-location"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:53:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "fa052905dd00782f08b98860c65f0ed0"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"New Location Added\"\n}"
+				}
+			]
+		},
+		{
+			"name": "BLOG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/blog",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"blog"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/blog",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"blog"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:24:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "569b8e4c20d1513b328c2e70ef08228a"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/blog",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"blog"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:51:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "73d7115ca42a8e732325c42327f4cee8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": [\n        {\n            \"title\": \"How to Decorate your new home from scratch\",\n            \"tag\": \"Sale\",\n            \"image\": \"https://images.unsplash.com/photo-1600493504591-aa1849716b36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60\",\n            \"created_at\": \"2023-08-18T13:49:29.000000Z\"\n        },\n        {\n            \"title\": \"How to Decorate your new home from scratch\",\n            \"tag\": \"Sale\",\n            \"image\": \"https://images.unsplash.com/photo-1617103996702-96ff29b1c467?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60\",\n            \"created_at\": \"2023-08-18T13:49:59.000000Z\"\n        },\n        {\n            \"title\": \"How to Decorate your new home from scratch\",\n            \"tag\": \"Sale\",\n            \"image\": \"https://images.unsplash.com/photo-1618219740975-d40978bb7378?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60\",\n            \"created_at\": \"2023-08-18T13:50:10.000000Z\"\n        },\n        {\n            \"title\": \"How to Decorate your new home from scratch\",\n            \"tag\": \"Sale\",\n            \"image\": \"https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60\",\n            \"created_at\": \"2023-08-18T13:50:22.000000Z\"\n        },\n        {\n            \"title\": \"How to Decorate your new home from scratch\",\n            \"tag\": \"Sale\",\n            \"image\": \"https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60\",\n            \"created_at\": \"2023-08-18T13:50:33.000000Z\"\n        },\n        {\n            \"title\": \"How to Decorate your new home from scratch\",\n            \"tag\": \"Sale\",\n            \"image\": \"https://images.unsplash.com/photo-1615874694520-474822394e73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60\",\n            \"created_at\": \"2023-08-18T13:50:45.000000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "FIND BLOG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/blog/5",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"blog",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/blog/5",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"blog",
+								"5"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:25:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "22e072c67aac7ed0c1ff620d85d796ea"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/blog/5",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"blog",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:51:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "5bab58435d504683889c4c5c2c22f0e2"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 5,\n        \"title\": \"How to Decorate your new home from scratch\",\n        \"body\": \"Aenean neque turpis, imperdiet nec ultricies eget, hendrerit at lorem. Vivamus congue vehicula fringilla. Suspendisse fringilla, diam nec tempor eleifend, metus felis imperdiet urna, in varius nisl urna et justo. Pellentesque ultricies fringilla ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus non ante posuere, finibus sapien at, suscipit justo. Aenean nisi risus, tincidunt sed turpis in, accumsan malesuada dolor. Proin sed nisi vulputate, aliquam purus quis, mattis dui. Nam efficitur ipsum orci, in viverra tellus venenatis et. Donec sagittis interdum malesuada. Nullam sed ante ullamcorper, tincidunt odio vel, posuere nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\\n\\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sit amet diam sed est fringilla facilisis eu a felis. Proin quis elit eu sem auctor efficitur vitae vel turpis. Suspendisse eu commodo diam. Proin congue nisl libero. Integer et pharetra ipsum. Cras egestas massa dignissim, iaculis nunc venenatis, finibus ante.\\n\\nPellentesque consectetur purus sit amet cursus pretium. Donec vitae augue lorem. Integer sit amet fringilla erat, vitae cursus leo. Aliquam iaculis, mauris non feugiat ultrices, nisl neque maximus dolor, at consectetur nibh velit vitae neque. Proin eu leo sit amet nunc interdum dapibus. Fusce nulla dui, hendrerit sed arcu suscipit, porttitor varius enim. Ut imperdiet felis ut ante convallis semper.\\n\\nNam a quam id urna ultricies hendrerit quis eu dui. Aliquam in risus sit amet quam placerat fringilla nec a turpis. Curabitur tristique dolor elit.\",\n        \"tag\": \"Sale\",\n        \"image\": \"https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60\",\n        \"agent_id\": {\n            \"id\": 3,\n            \"name\": \"Rose Roselinna\",\n            \"email\": \"Roselina.Ro@gmail.com\",\n            \"image\": \"https://i.dailymail.co.uk/i/pix/2014/04/23/article-2611078-1D48BA1600000578-1000_306x477.jpg\",\n            \"phone\": \"+2523265789\",\n            \"post\": \"land Seller\",\n            \"details\": \"s. Aliquam feugiat eleifend efficitur. Cras vel commodo eros. Aenean consectetur dui et nulla egestas, vel lobortis arcu fringilla. Aenean eu augue in arcu lobortis consequat rutrum nec nisi. Suspendisse efficitur orci eu dignissim volutpat. Pellentesque ullamcorper tortor sit amet metus lobortis, a vulputate lorem tincidunt. Nam volutpat congue augue, ut tincidunt magna dignissim volutpat. Pellentesque hendrerit porttitor congue. Suspendisse porttitor ex sit amet posuere pharetra. Sed gravida felis sed est interdum, nec gravida tortor maximus.\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "NEW ARTICLE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "How to Decorate your new home from scratch",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Aenean neque turpis, imperdiet nec ultricies eget, hendrerit at lorem. Vivamus congue vehicula fringilla. Suspendisse fringilla, diam nec tempor eleifend, metus felis imperdiet urna, in varius nisl urna et justo. Pellentesque ultricies fringilla ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus non ante posuere, finibus sapien at, suscipit justo. Aenean nisi risus, tincidunt sed turpis in, accumsan malesuada dolor. Proin sed nisi vulputate, aliquam purus quis, mattis dui. Nam efficitur ipsum orci, in viverra tellus venenatis et. Donec sagittis interdum malesuada. Nullam sed ante ullamcorper, tincidunt odio vel, posuere nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sit amet diam sed est fringilla facilisis eu a felis. Proin quis elit eu sem auctor efficitur vitae vel turpis. Suspendisse eu commodo diam. Proin congue nisl libero. Integer et pharetra ipsum. Cras egestas massa dignissim, iaculis nunc venenatis, finibus ante.\n\nPellentesque consectetur purus sit amet cursus pretium. Donec vitae augue lorem. Integer sit amet fringilla erat, vitae cursus leo. Aliquam iaculis, mauris non feugiat ultrices, nisl neque maximus dolor, at consectetur nibh velit vitae neque. Proin eu leo sit amet nunc interdum dapibus. Fusce nulla dui, hendrerit sed arcu suscipit, porttitor varius enim. Ut imperdiet felis ut ante convallis semper.\n\nNam a quam id urna ultricies hendrerit quis eu dui. Aliquam in risus sit amet quam placerat fringilla nec a turpis. Curabitur tristique dolor elit.",
+							"type": "text"
+						},
+						{
+							"key": "tag",
+							"value": "Sale",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "https://images.unsplash.com/photo-1615874694520-474822394e73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60\n",
+							"type": "text"
+						},
+						{
+							"key": "agent_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://realestateapi.000webhostapp.com/api/newArticle",
+					"protocol": "https",
+					"host": [
+						"realestateapi",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"newArticle"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "NEW ARTICLE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "How to Decorate your new home from scratch",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "Aenean neque turpis, imperdiet nec ultricies eget, hendrerit at lorem. Vivamus congue vehicula fringilla. Suspendisse fringilla, diam nec tempor eleifend, metus felis imperdiet urna, in varius nisl urna et justo. Pellentesque ultricies fringilla ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus non ante posuere, finibus sapien at, suscipit justo. Aenean nisi risus, tincidunt sed turpis in, accumsan malesuada dolor. Proin sed nisi vulputate, aliquam purus quis, mattis dui. Nam efficitur ipsum orci, in viverra tellus venenatis et. Donec sagittis interdum malesuada. Nullam sed ante ullamcorper, tincidunt odio vel, posuere nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sit amet diam sed est fringilla facilisis eu a felis. Proin quis elit eu sem auctor efficitur vitae vel turpis. Suspendisse eu commodo diam. Proin congue nisl libero. Integer et pharetra ipsum. Cras egestas massa dignissim, iaculis nunc venenatis, finibus ante.\n\nPellentesque consectetur purus sit amet cursus pretium. Donec vitae augue lorem. Integer sit amet fringilla erat, vitae cursus leo. Aliquam iaculis, mauris non feugiat ultrices, nisl neque maximus dolor, at consectetur nibh velit vitae neque. Proin eu leo sit amet nunc interdum dapibus. Fusce nulla dui, hendrerit sed arcu suscipit, porttitor varius enim. Ut imperdiet felis ut ante convallis semper.\n\nNam a quam id urna ultricies hendrerit quis eu dui. Aliquam in risus sit amet quam placerat fringilla nec a turpis. Curabitur tristique dolor elit.",
+									"type": "text"
+								},
+								{
+									"key": "tag",
+									"value": "Sale",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "https://images.unsplash.com/photo-1615874694520-474822394e73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60\n",
+									"type": "text"
+								},
+								{
+									"key": "agent_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://realestateapi.000webhostapp.com/api/newArticle",
+							"protocol": "https",
+							"host": [
+								"realestateapi",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"newArticle"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 18 Aug 2023 13:50:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "awex"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "dee9f15e9379b75c219d2a88f2a853d4"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Article Successfully Uploaded.\"\n}"
+				}
+			]
+		}
+	]
+}

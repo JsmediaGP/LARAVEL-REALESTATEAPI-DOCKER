@@ -100,7 +100,7 @@ class AgentController extends Controller
             ],200);
 
         }else{
-            return respons()->json([
+            return response()->json([
                 'Staus'=>'Error',
                 'message'=>"Can't find any Agent ID"
             ],202);
