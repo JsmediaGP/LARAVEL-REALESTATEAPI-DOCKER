@@ -16,14 +16,32 @@ class BlogController extends Controller
         if($articles->count()>0){
             return response()->json([
                 'status'=> "Success",
-                'message'=> $articles
-            ],200);
+                'data'=> $articles
+            ]);
         }
         else{
             return response()->json([
                 'status'=> "Error",
                 'message'=> "No article found"
-            ],204);
+            ]);
+        }
+
+    }
+
+    function featuredArticle(){
+        $articles = Blog::select('title', 'tag','image', 'created_at')->limit(2)->get();
+
+        if($articles->count()>0){
+            return response()->json([
+                'status'=> "Success",
+                'data'=> $articles
+            ]);
+        }
+        else{
+            return response()->json([
+                'status'=> "Error",
+                'message'=> "No article found"
+            ]);
         }
 
     }
@@ -40,7 +58,7 @@ class BlogController extends Controller
             return response()->json([
                 'status'=> "Error",
                 'message'=> "No article found"
-            ],204);
+            ]);
         }
     }
 
@@ -59,7 +77,7 @@ class BlogController extends Controller
             return response()->json([
                 'status'=> "Error",
                 'message'=> $details->messages()
-            ],404);
+            ]);
 
         }else{
 
@@ -75,12 +93,12 @@ class BlogController extends Controller
                     return response()->json([
                         'status'=> "Error",
                         'message'=> "Something went wrong"
-                    ], 404);
+                    ]);
                 }else{
                     return response()->json([
                         'status'=> "Success",
                         'message'=>"Article Successfully Uploaded."
-                    ],200);
+                    ]);
                 }
 
 

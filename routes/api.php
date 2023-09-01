@@ -49,5 +49,6 @@ Route::get('locationproperties/{location_id}', [LocationController::class, 'loca
 //shows all article, search/view an article by their id, and post a new article 
 
 Route::get('blog', [BlogController::class, 'Article']);
+Route::get('featuredblog', [BlogController::class, 'featuredArticle']);
 Route::get('blog/{id}', [BlogController::class, 'SingleArticle']);
 Route::post('newArticle', [BlogController::class, 'newarticle']);
